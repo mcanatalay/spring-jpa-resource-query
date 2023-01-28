@@ -32,7 +32,7 @@ public class JpaQueryResourceMethod extends JpaQueryMethod {
 
     @Override
     String getRequiredAnnotatedQuery() throws IllegalStateException {
-        String value = super.getAnnotatedQuery();
+        String value = super.getRequiredAnnotatedQuery();
         if (isResourcePath(value)) return getAnnotatedQueryFromResource(value);
         return value;
     }

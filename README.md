@@ -13,26 +13,21 @@ When your SQL queries become huge, spring-jpa-resource-query helps you to load t
     </repository>
 </repositories>
 ```
-
+**OR**
+```xml
+<repositories>
+    <repository>
+        <id>github</id>
+        <url>https://maven.pkg.github.com/mcanatalay/spring-jpa-resource-query</url>
+    </repository>
+</repositories>
+```
+**AND**
 ```xml
 <dependency>
     <groupId>com.github.mcanatalay</groupId>
     <artifactId>spring-jpa-resource-query</artifactId>
 </dependency>
-```
-
-## Configuration
-```java
-@Configuration
-public class JpaQueryConfig {
-    @PersistenceContext
-    EntityManager entityManager;
-
-    @Bean
-    JpaQueryMethodFactory queryMethodFactory() {
-        return new JpaQueryResourceMethodFactory(entityManager);
-    }
-}
 ```
 
 ## Usage
