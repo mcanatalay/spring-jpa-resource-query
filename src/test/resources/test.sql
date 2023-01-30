@@ -1,0 +1,1 @@
+SELECT data FROM test LIMIT 1
