@@ -7,18 +7,18 @@ When your SQL queries become huge, spring-jpa-resource-query helps you to load t
 ## Install
 ```xml
 <repositories>
-	<repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
+    <repository>
+        <id>github</id>
+        <url>https://maven.pkg.github.com/mcanatalay/spring-jpa-resource-query</url>
     </repository>
 </repositories>
 ```
 **OR**
 ```xml
 <repositories>
-    <repository>
-        <id>github</id>
-        <url>https://maven.pkg.github.com/mcanatalay/spring-jpa-resource-query</url>
+	<repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
     </repository>
 </repositories>
 ```
